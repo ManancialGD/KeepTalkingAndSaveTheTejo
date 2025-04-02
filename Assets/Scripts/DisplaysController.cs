@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DisplaysControler : MonoBehaviour
+public class DisplaysController : MonoBehaviour
 {
     private void Start()
     {

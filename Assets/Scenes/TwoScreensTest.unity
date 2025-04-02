@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 614950449}
   - component: {fileID: 614950448}
   m_Layer: 0
-  m_Name: DisplaysControler
+  m_Name: DisplaysController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
