@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 5196ec2720c1f36469db601626dc3259
   - enabled: 1
-    path: Assets/Scenes/TwoScreensTest.unity
+    path: Assets/Scenes/Prototype.unity
     guid: ab2d89f52752b504e8dd8782f49f3c0a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
