@@ -1,0 +1,8 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Animal", menuName = "Scriptable Objects/Animal")]
+public class Animal : ScriptableObject
+{
+    [field: SerializeField] public string Name { get; private set; }
+    [field: SerializeField] public Sprite Image { get; private set; }
+}
