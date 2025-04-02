@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SceneTools : MonoBehaviour
 {
-    public void ChangeScene(string sceneName)
+    public void LoadScene(string sceneName)
     {
         // Load the new scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
