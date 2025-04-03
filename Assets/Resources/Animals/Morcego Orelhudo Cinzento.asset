@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bd5e80492c4ac14c8922e7a14aa965f, type: 3}
-  m_Name: MorcegoOrelhudo Cinzento
+  m_Name: Morcego Orelhudo Cinzento
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Morcego Orelhudo Cinzento
-  <Image>k__BackingField: {fileID: 0}
+  <Image>k__BackingField: {fileID: 21300000, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}

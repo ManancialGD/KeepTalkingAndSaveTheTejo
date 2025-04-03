@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd5e80492c4ac14c8922e7a14aa965f, type: 3}
   m_Name: Lebre
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Ganeta
-  <Image>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Lebre
+  <Image>k__BackingField: {fileID: 21300000, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}

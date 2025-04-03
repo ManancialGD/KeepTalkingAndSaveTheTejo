@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private string sceneToLoad = "TwoScreensTest";
+    [SerializeField] private string sceneToLoad = "Prototype";
     [SerializeField] private Button[] startButtons;
     [SerializeField] private TextMeshProUGUI[] startButtonCountText;
 

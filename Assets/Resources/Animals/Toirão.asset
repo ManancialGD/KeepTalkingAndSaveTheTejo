@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd5e80492c4ac14c8922e7a14aa965f, type: 3}
   m_Name: "Toir\xE3o"
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Ganeta
-  <Image>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: "Toir\xE3o"
+  <Image>k__BackingField: {fileID: 21300000, guid: 0d6771f5bfe3d1a4eb9a155dea8ef971, type: 3}
