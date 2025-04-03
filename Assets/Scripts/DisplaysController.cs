@@ -4,10 +4,10 @@ public class DisplaysController : MonoBehaviour
 {
     private void Start()
     {
-        for (int i = 0; i < Display.displays.Length; i++)
+        if (Display.displays != null && Display.displays.Length == 2)
         {
-            Display.displays[i].Activate();
-            Debug.Log($"Display {i} activated.");
+            Display.displays[0].Activate();
+            Display.displays[1].Activate();
         }
     }
 }

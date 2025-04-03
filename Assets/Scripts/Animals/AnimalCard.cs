@@ -12,6 +12,7 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     private void Awake()
     {
         OnValidate();
+        OnBeforeSerialize();
     }
 
     public void OnBeforeSerialize()
@@ -20,11 +21,11 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
         {
             if (nameText != null)
             {
-                nameText.text = animal.Name;
+                nameText.text = animal.Name ?? "";
             }
             if (animalImage != null)
             {
-                animalImage.sprite = animal.Image;
+                animalImage.sprite = animal.Image != null ? animal.Image : null;
             }
         }
     }
