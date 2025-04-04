@@ -6,6 +6,8 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField] private Animal animal;
 
+    public bool IsActive = true;
+
     private Animator anim;
 
     public Animal Animal
