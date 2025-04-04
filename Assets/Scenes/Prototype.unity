@@ -501,6 +501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnimalCard
       objectReference: {fileID: 0}
+    - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5828397175939661332, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: animal
       value: 
@@ -909,50 +913,6 @@ Transform:
   m_Children:
   - {fileID: 1960438472}
   m_Father: {fileID: 656214783}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &614950447
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 614950449}
-  - component: {fileID: 614950448}
-  m_Layer: 0
-  m_Name: DisplaysController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &614950448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614950447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04138c02049491a4b9c3ba75de7a594b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &614950449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614950447}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &656214782
 GameObject:
@@ -1469,7 +1429,7 @@ GameObject:
   - component: {fileID: 1000074009}
   - component: {fileID: 1000074010}
   m_Layer: 0
-  m_Name: AnimalsPanel
+  m_Name: AnimalsTalbe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2361,7 +2321,7 @@ GameObject:
   - component: {fileID: 1978967358}
   - component: {fileID: 1978967359}
   m_Layer: 0
-  m_Name: YourAnimalPanel
+  m_Name: YourAnimalCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,6 +2454,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1000074009}
     m_Modifications:
+    - target: {fileID: 1587455019926550640, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_text
+      value: Gineta
+      objectReference: {fileID: 0}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard
@@ -2598,4 +2562,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 656214783}
   - {fileID: 241811773}
-  - {fileID: 614950449}

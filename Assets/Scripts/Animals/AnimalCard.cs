@@ -4,11 +4,21 @@ using UnityEngine.UI;
 
 public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
-    public Animal animal;
+    [SerializeField] private Animal animal;
 
-    [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private Image animalImage;
-    
+    public Animal Animal
+    {
+        get => animal;
+        set
+        {
+            animal = value;
+            OnBeforeSerialize();
+        }
+    }
+
+    private TextMeshProUGUI nameText;
+    private Image animalImage;
+
     private void Awake()
     {
         OnValidate();
