@@ -6,8 +6,14 @@ public class DisplaysController : MonoBehaviour
     {
         if (Display.displays != null && Display.displays.Length == 2)
         {
-            Display.displays[0].Activate();
-            Display.displays[1].Activate();
+            if (Display.displays[0].active == false)
+            {
+                Display.displays[0].Activate();
+            }
+            if (Display.displays[1].active == false)
+            {
+                Display.displays[1].Activate();
+            }
         }
     }
 }

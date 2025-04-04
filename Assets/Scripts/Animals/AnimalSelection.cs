@@ -7,8 +7,13 @@ public class AnimalSelection : MonoBehaviour
 
     private void Awake()
     {
-        animals = GetComponentsInChildren<AnimalCard>();
+        OnValidate();
         currentCardID = 0;
+
+    }
+
+    private void Start()
+    {
         animals[currentCardID].Select();
     }
 
@@ -44,5 +49,13 @@ public class AnimalSelection : MonoBehaviour
         else animals[currentCardID].Undiscart();
 
         animals[currentCardID].IsActive = !animals[currentCardID].IsActive;
+    }
+
+    private void OnValidate()
+    {
+        if (animals == null || animals.Length == 0)
+        {
+            animals = GetComponentsInChildren<AnimalCard>();
+        }
     }
 }
