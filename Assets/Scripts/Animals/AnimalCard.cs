@@ -6,6 +6,8 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField] private Animal animal;
 
+    private Animator anim;
+
     public Animal Animal
     {
         get => animal;
@@ -47,10 +49,44 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
         if (nameText == null)
         {
             nameText = GetComponentInChildren<TextMeshProUGUI>();
+            if (nameText == null)
+            {
+                Debug.LogError("TextMeshProUGUI component not found on the AnimalCard GameObject.");
+            }
         }
         if (animalImage == null)
         {
             animalImage = GetComponentInChildren<Image>();
+            if (animalImage == null)
+            {
+                Debug.LogError("Image component not found on the AnimalCard GameObject.");
+            }
         }
+        if (anim == null)
+        {
+            anim = GetComponent<Animator>();
+            if (anim == null)
+            {
+                Debug.LogError("Animator component not found on the AnimalCard GameObject.");
+            }
+        }
+    }
+
+    public void Select()
+    {
+        anim.SetTrigger("Select");
+    }
+    public void Deselect()
+    {
+        anim.SetTrigger("Deselect");
+    }
+    public void Discart()
+    {
+        anim.SetTrigger("Discart");
+    }
+
+    public void Undiscart()
+    {
+        anim.SetTrigger("Undiscart");
     }
 }
