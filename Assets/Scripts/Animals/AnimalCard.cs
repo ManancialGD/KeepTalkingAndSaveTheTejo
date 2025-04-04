@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,9 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 
     private Animator anim;
 
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private Image animalImage;
+
     public Animal Animal
     {
         get => animal;
@@ -17,9 +21,6 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
             OnBeforeSerialize();
         }
     }
-
-    private TextMeshProUGUI nameText;
-    private Image animalImage;
 
     private void Awake()
     {
@@ -56,7 +57,8 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
         }
         if (animalImage == null)
         {
-            animalImage = GetComponentInChildren<Image>();
+            Image[] childImages = GetComponentsInChildren<Image>();
+            animalImage = childImages.FirstOrDefault(i => i.name == "AnimalImage") ?? null;
             if (animalImage == null)
             {
                 Debug.LogError("Image component not found on the AnimalCard GameObject.");
