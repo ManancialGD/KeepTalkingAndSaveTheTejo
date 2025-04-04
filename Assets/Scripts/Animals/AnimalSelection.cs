@@ -9,7 +9,6 @@ public class AnimalSelection : MonoBehaviour
     {
         OnValidate();
         currentCardID = 0;
-
     }
 
     private void Start()
