@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cbed6f3b934082a408f943777882fe7e
+guid: 74f7abcc44f9e2c49b303145c109dd2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9159677260662761317
-    second: BluredSquare_0
+      213: -931319289527144530
+    second: Base_FotoAnimal@4x_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 65, y: 65, z: 65, w: 65}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BluredSquare_0
+      name: Base_FotoAnimal@4x_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 246
-        height: 247
+        x: 52
+        y: 23
+        width: 1117
+        height: 1346
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9819fcbf0a42e080800000000000000
-      internalID: -9159677260662761317
+      spriteID: eafe34f5a0a4313f0800000000000000
+      internalID: -931319289527144530
       vertices: []
       indices: 
       edges: []
@@ -125,8 +125,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BluredSquare_0: -9159677260662761317
+      Base_FotoAnimal@4x_0: -931319289527144530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
