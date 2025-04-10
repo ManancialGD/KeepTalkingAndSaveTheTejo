@@ -7,7 +7,7 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField] private Animal animal;
 
-    public bool IsActive = true;
+    private bool isActive = true;
 
     private Animator anim;
 
@@ -84,13 +84,13 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     {
         anim.SetTrigger("Deselect");
     }
-    public void Discart()
+    public void ToggleDiscart()
     {
-        anim.SetTrigger("Discart");
-    }
+        if (isActive)
+            anim.SetTrigger("Discart");
+        else
+            anim.SetTrigger("Undiscart");
 
-    public void Undiscart()
-    {
-        anim.SetTrigger("Undiscart");
+        isActive = !isActive;
     }
 }
