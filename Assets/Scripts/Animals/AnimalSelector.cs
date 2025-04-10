@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AnimalSelector : MonoBehaviour
 {
-    [SerializeField] private AnimalCard[] animals;
+    [SerializeField] private AnimalCard[] animalsCards;
     [SerializeField] private uint currentCardID;
     [SerializeField] private AnimalSelector other;
     public Animal ThisAnimal { get; private set; }
@@ -35,7 +35,7 @@ public class AnimalSelector : MonoBehaviour
 
     private void Start()
     {
-        animals[currentCardID].Select();
+        animalsCards[currentCardID].Select();
     }
 
     private void Update()
@@ -52,25 +52,61 @@ public class AnimalSelector : MonoBehaviour
 
     private void NextCard()
     {
-        animals[currentCardID].Deselect();
+        animalsCards[currentCardID].Deselect();
         currentCardID++;
 
-        if (currentCardID >= animals.Length)
+        if (currentCardID >= animalsCards.Length)
             currentCardID = 0;
 
-        animals[currentCardID].Select();
+        animalsCards[currentCardID].Select();
     }
 
     private void ToggleCard()
     {
-        animals[currentCardID].ToggleDiscart();
+        animalsCards[currentCardID].ToggleDiscart();
+    }
+
+    private void CheckWinConditions()
+    {
+        Animal selectedAnimal = null;
+        uint discardedAnimalCount = 0;
+
+        foreach (AnimalCard animalCard in animalsCards)
+        {
+            if (animalCard.IsActive)
+                selectedAnimal = animalCard.Animal;
+            else
+                discardedAnimalCount++;
+        }
+
+        if (discardedAnimalCount == animalsCards.Length - 1)
+        {
+            if (selectedAnimal == other.ThisAnimal)
+            {
+                Win();
+            }
+            else
+            {
+                Lose();
+            }
+        }
+    }
+
+    private void Win()
+    {
+        Debug.Log("You got it right!");
+    }
+
+    private void Lose()
+    {
+        Debug.Log("You got it wrong!");
     }
 
     private void OnValidate()
     {
-        if (animals == null || animals.Length == 0)
+        if (animalsCards == null || animalsCards.Length == 0)
         {
-            animals = GetComponentsInChildren<AnimalCard>();
+            animalsCards = GetComponentsInChildren<AnimalCard>();
         }
         if (other == null)
         {

@@ -8,6 +8,7 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     [SerializeField] private Animal animal;
 
     private bool isActive = true;
+    public bool IsActive { get { return isActive; } }
 
     private Animator anim;
 
