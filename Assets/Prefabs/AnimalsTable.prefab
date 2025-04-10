@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Rato Cega
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 30.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -293,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: "Morcego An\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 21.5
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
@@ -412,6 +420,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "Toir\xE3o"
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -529,6 +541,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: "Ouri\xE7o Cacheiro"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
@@ -648,6 +664,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Lebre
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -765,6 +785,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: Toupeira
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 35.4
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
@@ -884,6 +908,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Morcego Orelhudo Cinzento
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1001,6 +1029,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: Geneta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
@@ -1120,6 +1152,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Javali
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1237,6 +1273,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: Gato Bravo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 27.85
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
@@ -1356,6 +1396,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Raposa
       objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1473,6 +1517,10 @@ PrefabInstance:
     - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_text
       value: Lontra
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448202754510258507, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8376475302201801509, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Pivot.x
