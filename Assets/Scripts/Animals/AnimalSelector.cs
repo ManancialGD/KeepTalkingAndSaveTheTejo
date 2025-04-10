@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimalSelector : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class AnimalSelector : MonoBehaviour
     public Animal ThisAnimal { get; private set; }
     [SerializeField] private MyAnimalCardDisplay myAnimalDisplay;
     private Animal[] allAnimals;
+
+    [SerializeField] private InputActionReference primaryActionReference;
+    [SerializeField] private InputActionReference secondaryActionReference;
 
     private void Awake()
     {
@@ -29,25 +33,37 @@ public class AnimalSelector : MonoBehaviour
         }
 
         myAnimalDisplay.Animal = ThisAnimal;
-        
+
         currentCardID = 0;
+    }
+    private void OnEnable()
+    {
+        if (primaryActionReference != null)
+            primaryActionReference.action.performed += OnPrimaryAction;
+        if (secondaryActionReference != null)
+            secondaryActionReference.action.performed += OnSecondaryAction;
+    }
+    private void OnDisable()
+    {
+        if (primaryActionReference != null)
+            primaryActionReference.action.performed -= OnPrimaryAction;
+        if (secondaryActionReference != null)
+            secondaryActionReference.action.performed -= OnSecondaryAction;
+    }
+
+    private void OnPrimaryAction(InputAction.CallbackContext context)
+    {
+        NextCard();
+
+    }
+    private void OnSecondaryAction(InputAction.CallbackContext context)
+    {
+        ToggleCard();
     }
 
     private void Start()
     {
         animalsCards[currentCardID].Select();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            NextCard();
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            ToggleCard();
-        }
     }
 
     private void NextCard()
