@@ -14,6 +14,9 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image animalImage;
+    [SerializeField] private Transform symbolsParent;
+    [SerializeField] private Image symbolPrefab;
+    private Image[] symbolChilds;
 
     public Animal Animal
     {
@@ -29,6 +32,28 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     {
         OnValidate();
         OnBeforeSerialize();
+        if (symbolsParent != null && symbolPrefab != null)
+        {
+            var children = symbolsParent.GetComponentsInChildren<Image>().ToList();
+            foreach (var child in children)
+            {
+                if (!Application.isPlaying)
+                {
+                    DestroyImmediate(child.gameObject);
+                }
+                else
+                    Destroy(child.gameObject);
+
+            }
+            if (animal.Symbols != null && animal.Symbols.Length > 0)
+            {
+                foreach (var symbol in animal.Symbols)
+                {
+                    Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
+                    symbolImage.sprite = symbol.Image;
+                }
+            }
+        }
     }
 
     public void OnBeforeSerialize()

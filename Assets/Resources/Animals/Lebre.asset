@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Lebre
   <Image>k__BackingField: {fileID: 21300000, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: c20b3f1e92fb8ab4bbcafc253c30e6ff, type: 2}
+  - {fileID: 11400000, guid: 9a7a5110f9a140a4f9ce74b9927bdf2a, type: 2}
+  - {fileID: 11400000, guid: 79eaaa9d1eb14d340818292e952372bc, type: 2}

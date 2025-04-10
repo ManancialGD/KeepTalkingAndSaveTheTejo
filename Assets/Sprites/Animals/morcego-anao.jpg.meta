@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d6771f5bfe3d1a4eb9a155dea8ef971
+guid: 7f50baa8520cac349ac918c936d4e20f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8107703241160504576
-    second: toirao_0
+      213: 823810634000593550
+    second: morcego-anao_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toirao_0
+      name: morcego-anao_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1255
-        height: 1255
+        width: 516
+        height: 413
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 005b7a13429548070800000000000000
-      internalID: 8107703241160504576
+      spriteID: e827bc92863ce6b00800000000000000
+      internalID: 823810634000593550
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      toirao_0: 8107703241160504576
+      morcego-anao_0: 823810634000593550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

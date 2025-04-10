@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: "Morcego An\xE3o"
   m_EditorClassIdentifier: 
   <Name>k__BackingField: "Morcego An\xE3o"
-  <Image>k__BackingField: {fileID: 21300000, guid: 7f137daa80ceaed4088a2dd7a8ff4b24, type: 3}
+  <Image>k__BackingField: {fileID: 21300000, guid: 7f50baa8520cac349ac918c936d4e20f, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: d1a9fed26eb1f9e4eaabb1d56a01788c, type: 2}
+  - {fileID: 11400000, guid: 6a92da27d81d27946bdea94ce6fac969, type: 2}

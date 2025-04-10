@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Javali
   <Image>k__BackingField: {fileID: 21300000, guid: d6366fc05f83dc2439f721553fadf191, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: 313ab8e298feb6249a3a4ab4d3590bf5, type: 2}
+  - {fileID: 11400000, guid: 9a7a5110f9a140a4f9ce74b9927bdf2a, type: 2}

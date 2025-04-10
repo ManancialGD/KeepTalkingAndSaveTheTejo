@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bd5e80492c4ac14c8922e7a14aa965f, type: 3}
-  m_Name: Rato Cega
+  m_Script: {fileID: 11500000, guid: bd93119079c1cea4f8a3fa173829c681, type: 3}
+  m_Name: "Carn\xEDvoro"
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Rato Cega
-  <Image>k__BackingField: {fileID: 21300000, guid: 59aa518c709cce5429422770eb911725, type: 3}
+  <Name>k__BackingField: "Car\xEDnovoro"
+  <Image>k__BackingField: {fileID: 21300000, guid: 3abf062fda0535340a79957af03b9b8b, type: 3}

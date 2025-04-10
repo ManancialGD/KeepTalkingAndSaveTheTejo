@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: "Toir\xE3o"
   m_EditorClassIdentifier: 
   <Name>k__BackingField: "Toir\xE3o"
-  <Image>k__BackingField: {fileID: 21300000, guid: 0d6771f5bfe3d1a4eb9a155dea8ef971, type: 3}
+  <Image>k__BackingField: {fileID: 21300000, guid: 3acb2b4767fe6bc4fbd387c07cfd986b, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: ee253355c2786ba48be91b8550a0728a, type: 2}
+  - {fileID: 11400000, guid: 9a7a5110f9a140a4f9ce74b9927bdf2a, type: 2}

@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Raposa
   <Image>k__BackingField: {fileID: 21300000, guid: 972cb2c3753e1b4408a68866b9f238cb, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: ee253355c2786ba48be91b8550a0728a, type: 2}
+  - {fileID: 11400000, guid: 9a7a5110f9a140a4f9ce74b9927bdf2a, type: 2}

@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Lontra
   <Image>k__BackingField: {fileID: 21300000, guid: 27c1e17a82e02ea44b54a40cf95c808e, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: ee253355c2786ba48be91b8550a0728a, type: 2}
+  - {fileID: 11400000, guid: 79eaaa9d1eb14d340818292e952372bc, type: 2}

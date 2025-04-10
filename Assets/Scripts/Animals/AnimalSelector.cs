@@ -1,6 +1,9 @@
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+using Random = UnityEngine.Random;
 
 public class AnimalSelector : MonoBehaviour
 {
@@ -13,6 +16,10 @@ public class AnimalSelector : MonoBehaviour
 
     [SerializeField] private InputActionReference primaryActionReference;
     [SerializeField] private InputActionReference secondaryActionReference;
+    [SerializeField] private Animator winLoseAnimator;
+    private bool gameEnded;
+
+    public event Action Win;
 
     private void Awake()
     {
@@ -32,10 +39,20 @@ public class AnimalSelector : MonoBehaviour
             }
         }
 
+        other.Win += OnLose;
+        Win += OnWin;
+
         myAnimalDisplay.Animal = ThisAnimal;
 
         currentCardID = 0;
     }
+
+    private void Start()
+    {
+        gameEnded = false;
+        animalsCards[currentCardID].Select();
+    }
+
     private void OnEnable()
     {
         if (primaryActionReference != null)
@@ -53,17 +70,14 @@ public class AnimalSelector : MonoBehaviour
 
     private void OnPrimaryAction(InputAction.CallbackContext context)
     {
+        if (gameEnded) return;
         NextCard();
-
     }
     private void OnSecondaryAction(InputAction.CallbackContext context)
     {
+        if (gameEnded) return;
         ToggleCard();
-    }
-
-    private void Start()
-    {
-        animalsCards[currentCardID].Select();
+        CheckWinConditions();
     }
 
     private void NextCard()
@@ -99,23 +113,21 @@ public class AnimalSelector : MonoBehaviour
         {
             if (selectedAnimal == other.ThisAnimal)
             {
-                Win();
-            }
-            else
-            {
-                Lose();
+                Win?.Invoke();
             }
         }
     }
 
-    private void Win()
+    private void OnWin()
     {
-        Debug.Log("You got it right!");
+        winLoseAnimator.SetTrigger("Win");
+        gameEnded = true;
     }
 
-    private void Lose()
+    private void OnLose()
     {
-        Debug.Log("You got it wrong!");
+        winLoseAnimator.SetTrigger("Lose");
+        gameEnded = true;
     }
 
     private void OnValidate()

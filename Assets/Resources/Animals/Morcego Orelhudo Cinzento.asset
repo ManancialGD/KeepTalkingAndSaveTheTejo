@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd5e80492c4ac14c8922e7a14aa965f, type: 3}
   m_Name: Morcego Orelhudo Cinzento
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Morcego Orelhudo Cinzento
+  <Name>k__BackingField: Morcego Orelhudo
   <Image>k__BackingField: {fileID: 21300000, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}
+  constraints: []
+  symbols:
+  - {fileID: 11400000, guid: d1a9fed26eb1f9e4eaabb1d56a01788c, type: 2}
+  - {fileID: 11400000, guid: 922a5f38fa77cd64a8591af352752b1c, type: 2}
