@@ -16,7 +16,7 @@ public class AnimalSelector : MonoBehaviour
 
     [SerializeField] private InputActionReference primaryActionReference;
     [SerializeField] private InputActionReference secondaryActionReference;
-    [SerializeField] private Animator winLoseAnimator;
+    [SerializeField] private WinLoseUI winLoseUI;
     private bool gameEnded;
 
     public event Action Win;
@@ -120,13 +120,15 @@ public class AnimalSelector : MonoBehaviour
 
     private void OnWin()
     {
-        winLoseAnimator.SetTrigger("Win");
+        winLoseUI.gameObject.SetActive(true);
+        winLoseUI.ShowWin(other.ThisAnimal);
         gameEnded = true;
     }
 
     private void OnLose()
     {
-        winLoseAnimator.SetTrigger("Lose");
+        winLoseUI.gameObject.SetActive(true);
+        winLoseUI.ShowLose(other.ThisAnimal);
         gameEnded = true;
     }
 

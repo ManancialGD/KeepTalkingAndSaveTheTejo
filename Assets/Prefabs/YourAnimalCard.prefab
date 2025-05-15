@@ -1081,7 +1081,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: f891cee1c6023bb4f97053f308753fdf, type: 3}
     - target: {fileID: 4112001363871538108, guid: 98646ec6558094d4a956e446a2caac7c, type: 3}
       propertyPath: m_text
-      value: Cidades
+      value: Cidade
       objectReference: {fileID: 0}
     - target: {fileID: 5018015590271070171, guid: 98646ec6558094d4a956e446a2caac7c, type: 3}
       propertyPath: m_Name
@@ -1651,7 +1651,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 5fe46827c08881a4e9cdcc3de9afd12f, type: 3}
     - target: {fileID: 4112001363871538108, guid: 98646ec6558094d4a956e446a2caac7c, type: 3}
       propertyPath: m_text
-      value: "On\xEDvoro"
+      value: "Omn\xEDvoro"
       objectReference: {fileID: 0}
     - target: {fileID: 5018015590271070171, guid: 98646ec6558094d4a956e446a2caac7c, type: 3}
       propertyPath: m_Name

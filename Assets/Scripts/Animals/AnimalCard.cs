@@ -6,17 +6,15 @@ using UnityEngine.UI;
 public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField] private Animal animal;
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private Image animalImage;
+    [SerializeField] private Transform symbolsParent;
+    [SerializeField] private Image symbolPrefab;
 
     private bool isActive = true;
     public bool IsActive { get { return isActive; } }
 
     private Animator anim;
-
-    [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private Image animalImage;
-    [SerializeField] private Transform symbolsParent;
-    [SerializeField] private Image symbolPrefab;
-    private Image[] symbolChilds;
 
     public Animal Animal
     {
@@ -32,28 +30,8 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     {
         OnValidate();
         OnBeforeSerialize();
-        if (symbolsParent != null && symbolPrefab != null)
-        {
-            var children = symbolsParent.GetComponentsInChildren<Image>().ToList();
-            foreach (var child in children)
-            {
-                if (!Application.isPlaying)
-                {
-                    DestroyImmediate(child.gameObject);
-                }
-                else
-                    Destroy(child.gameObject);
 
-            }
-            if (animal.Symbols != null && animal.Symbols.Length > 0)
-            {
-                foreach (var symbol in animal.Symbols)
-                {
-                    Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
-                    symbolImage.sprite = symbol.Image;
-                }
-            }
-        }
+        UpdateSymbols();
     }
 
     public void OnBeforeSerialize()
@@ -67,6 +45,29 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
             if (animalImage != null)
             {
                 animalImage.sprite = animal.Image != null ? animal.Image : null;
+            }
+        }
+    }
+
+    public void UpdateSymbols()
+    {
+        if (animal == null)
+            return;
+
+        if (symbolsParent != null && symbolPrefab != null)
+        {
+            var children = symbolsParent.GetComponentsInChildren<Image>().ToList();
+            foreach (var child in children)
+            {
+                Destroy(child.gameObject);
+            }
+            if (animal.Symbols != null && animal.Symbols.Length > 0)
+            {
+                foreach (var symbol in animal.Symbols)
+                {
+                    Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
+                    symbolImage.sprite = symbol.Image;
+                }
             }
         }
     }
@@ -110,6 +111,7 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     {
         anim.SetTrigger("Deselect");
     }
+
     public void ToggleDiscart()
     {
         if (isActive)
