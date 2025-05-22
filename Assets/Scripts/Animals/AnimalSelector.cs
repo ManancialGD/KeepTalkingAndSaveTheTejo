@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,7 +21,7 @@ public class AnimalSelector : MonoBehaviour
 
     public event Action Win;
 
-    private void OnEnable()
+    private IEnumerator Start()
     {
         OnValidate();
 
@@ -30,12 +31,19 @@ public class AnimalSelector : MonoBehaviour
         currentCardID = 0;
 
         gameEnded = false;
-        animalsCards[currentCardID].Select();
+        
+        yield return null;
 
+        animalsCards[currentCardID].Select();
+    }
+
+    private void OnEnable()
+    {
         if (primaryActionReference != null)
             primaryActionReference.action.performed += OnPrimaryAction;
         if (secondaryActionReference != null)
             secondaryActionReference.action.performed += OnSecondaryAction;
+
     }
 
     private void OnDisable()
