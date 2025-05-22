@@ -10,9 +10,8 @@ public class AnimalSelector : MonoBehaviour
     [SerializeField] private AnimalCard[] animalsCards;
     [SerializeField] private uint currentCardID;
     [SerializeField] private AnimalSelector other;
-    public Animal ThisAnimal { get; private set; }
-    [SerializeField] private MyAnimalCardDisplay myAnimalDisplay;
-    private Animal[] allAnimals;
+    public Animal ThisAnimal { get; set; }
+    public MyAnimalCardDisplay myAnimalDisplay;
 
     [SerializeField] private InputActionReference primaryActionReference;
     [SerializeField] private InputActionReference secondaryActionReference;
@@ -21,45 +20,24 @@ public class AnimalSelector : MonoBehaviour
 
     public event Action Win;
 
-    private void Awake()
+    private void OnEnable()
     {
         OnValidate();
-
-        allAnimals = Resources.LoadAll<Animal>("Animals").ToArray();
-        if (allAnimals != null && allAnimals.Length > 0)
-        {
-            if (other.ThisAnimal == null)
-            {
-                ThisAnimal = allAnimals[Random.Range(0, allAnimals.Length)];
-            }
-            else
-            {
-                var animalsWithoutOther = allAnimals.Where(a => a != other.ThisAnimal).ToArray();
-                ThisAnimal = animalsWithoutOther[Random.Range(0, animalsWithoutOther.Length)];
-            }
-        }
 
         other.Win += OnLose;
         Win += OnWin;
 
-        myAnimalDisplay.Animal = ThisAnimal;
-
         currentCardID = 0;
-    }
 
-    private void Start()
-    {
         gameEnded = false;
         animalsCards[currentCardID].Select();
-    }
 
-    private void OnEnable()
-    {
         if (primaryActionReference != null)
             primaryActionReference.action.performed += OnPrimaryAction;
         if (secondaryActionReference != null)
             secondaryActionReference.action.performed += OnSecondaryAction;
     }
+
     private void OnDisable()
     {
         if (primaryActionReference != null)
@@ -70,12 +48,18 @@ public class AnimalSelector : MonoBehaviour
 
     private void OnPrimaryAction(InputAction.CallbackContext context)
     {
-        if (gameEnded) return;
+        if (gameEnded)
+        {
+            SceneTools.GoToMainMenu();
+        }
         NextCard();
     }
     private void OnSecondaryAction(InputAction.CallbackContext context)
     {
-        if (gameEnded) return;
+        if (gameEnded)
+        {
+            SceneTools.GoToMainMenu();
+        }
         ToggleCard();
         CheckWinConditions();
     }

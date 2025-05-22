@@ -1,12 +1,14 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneTools : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public static void LoadScene(string sceneName)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -17,10 +19,15 @@ public class SceneTools : MonoBehaviour
         {
             LoadScene("MainMenu");
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            LoadScene("Prototype");
+            LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    public static void GoToMainMenu()
+    {
+        LoadScene("MainMenu");
     }
     public void QuitGame()
     {

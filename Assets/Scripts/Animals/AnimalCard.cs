@@ -10,6 +10,7 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     [SerializeField] private Image animalImage;
     [SerializeField] private Transform symbolsParent;
     [SerializeField] private Image symbolPrefab;
+    [SerializeField] private bool hasSymbols;
 
     private bool isActive = true;
     public bool IsActive { get { return isActive; } }
@@ -61,12 +62,15 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
             {
                 Destroy(child.gameObject);
             }
-            if (animal.Symbols != null && animal.Symbols.Length > 0)
+            if (hasSymbols)
             {
-                foreach (var symbol in animal.Symbols)
+                if (animal.Symbols != null && animal.Symbols.Length > 0)
                 {
-                    Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
-                    symbolImage.sprite = symbol.Image;
+                    foreach (var symbol in animal.Symbols)
+                    {
+                        Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
+                        symbolImage.sprite = symbol.Image;
+                    }
                 }
             }
         }
