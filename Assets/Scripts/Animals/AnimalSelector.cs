@@ -19,6 +19,10 @@ public class AnimalSelector : MonoBehaviour
     [SerializeField] private WinLoseUI winLoseUI;
     private bool gameEnded;
 
+    [SerializeField] private bool useTimer;
+    [SerializeField] private bool myTurn;
+    [SerializeField] private float timer;
+
     public event Action Win;
 
     private IEnumerator Start()
@@ -35,6 +39,19 @@ public class AnimalSelector : MonoBehaviour
         yield return null;
 
         animalsCards[currentCardID].Select();
+    }
+
+    private void Update()
+    {
+        if (myTurn && useTimer)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                OnLose();
+                other.OnWin();
+            }
+        }
     }
 
     private void OnEnable()
@@ -60,7 +77,10 @@ public class AnimalSelector : MonoBehaviour
         {
             SceneTools.GoToMainMenu();
         }
-        NextCard();
+        if (myTurn)
+        {
+            NextCard();
+        }
     }
     private void OnSecondaryAction(InputAction.CallbackContext context)
     {
@@ -68,24 +88,48 @@ public class AnimalSelector : MonoBehaviour
         {
             SceneTools.GoToMainMenu();
         }
-        ToggleCard();
+        if (myTurn)
+        {
+            ToggleCard();
+        }
         CheckWinConditions();
     }
 
     private void NextCard()
     {
-        animalsCards[currentCardID].Deselect();
+        if (currentCardID < animalsCards.Length)
+            animalsCards[currentCardID].Deselect();
         currentCardID++;
 
-        if (currentCardID >= animalsCards.Length)
+        if (currentCardID > animalsCards.Length)
             currentCardID = 0;
 
-        animalsCards[currentCardID].Select();
+        if (currentCardID != animalsCards.Length)
+            animalsCards[currentCardID].Select();
     }
 
     private void ToggleCard()
     {
-        animalsCards[currentCardID].ToggleDiscart();
+        if (currentCardID < animalsCards.Length)
+        {
+            animalsCards[currentCardID].ToggleDiscart();
+        }
+        
+        if (currentCardID == animalsCards.Length)
+        {
+            EndTurn();
+        }
+    }
+
+    private void EndTurn()
+    {
+        myTurn = false;
+        other.StartTurn();
+    }
+
+    public void StartTurn()
+    {
+        myTurn = true;
     }
 
     private void CheckWinConditions()

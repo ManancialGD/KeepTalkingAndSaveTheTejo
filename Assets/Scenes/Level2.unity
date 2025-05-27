@@ -2123,6 +2123,9 @@ MonoBehaviour:
   primaryActionReference: {fileID: -7509495631122938441, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryActionReference: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 441897379}
+  useTimer: 0
+  myTurn: 1
+  timer: 0
 --- !u!1001 &221948378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4981,6 +4984,9 @@ MonoBehaviour:
   primaryActionReference: {fileID: -6212728451828032887, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryActionReference: {fileID: -4491779941360513393, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 521099210}
+  useTimer: 0
+  myTurn: 0
+  timer: 0
 --- !u!1 &915359012
 GameObject:
   m_ObjectHideFlags: 0
