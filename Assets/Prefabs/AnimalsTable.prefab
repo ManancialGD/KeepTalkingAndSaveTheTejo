@@ -159,6 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5231808338093556231}
   - component: {fileID: 5287255090111444321}
+  - component: {fileID: 5529768288095906057}
   m_Layer: 0
   m_Name: Artboard 12@2x 1_0
   m_TagString: Untagged
@@ -176,7 +177,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 680, y: -254, z: -200.32977}
-  m_LocalScale: {x: 80.7, y: 80.7, z: 80.7}
+  m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1055551545690648085}
@@ -236,6 +237,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5529768288095906057
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371353051200680530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adad1d3e240515a40aef823d4aea528d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1750214323851905389
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -47,6 +47,9 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
             {
                 animalImage.sprite = animal.Image != null ? animal.Image : null;
             }
+#if !UNITY_EDITOR
+            UpdateSymbols();
+#endif
         }
     }
 

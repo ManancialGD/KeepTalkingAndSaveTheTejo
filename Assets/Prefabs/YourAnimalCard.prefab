@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 9159640599338915511}
   - component: {fileID: 3882928049199266218}
   m_Layer: 0
-  m_Name: ContrangimentosContent
+  m_Name: ConstrantsContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nenhum
+  m_text: Nenhuma
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 1420844497426985368}
   - component: {fileID: 6027339655711675477}
   m_Layer: 0
-  m_Name: Constrangimentos
+  m_Name: Constraints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -962,7 +962,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 283.9, y: 50}
+  m_SizeDelta: {x: 283.9, y: 40.047}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1420844497426985368
 CanvasRenderer:
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Constrangimentos
+  m_text: "Restri\xE7\xF5es"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

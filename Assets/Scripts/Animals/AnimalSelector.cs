@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +23,9 @@ public class AnimalSelector : MonoBehaviour
     [SerializeField] private bool useTimer;
     [SerializeField] private bool myTurn;
     [SerializeField] private float timer;
+    [SerializeField] private TextMeshProUGUI timerText;
+
+    [SerializeField] private Animator nextButton;
 
     public event Action Win;
 
@@ -35,7 +39,15 @@ public class AnimalSelector : MonoBehaviour
         currentCardID = 0;
 
         gameEnded = false;
-        
+
+        if (useTimer && timerText != null)
+        {
+            int minutes = Mathf.FloorToInt(timer / 60f);
+            int seconds = Mathf.FloorToInt(timer % 60f);
+            timerText.text = $"{minutes:00}:{seconds:00}";
+            timerText.fontSize = 100;
+        }
+
         yield return null;
 
         animalsCards[currentCardID].Select();
@@ -43,9 +55,13 @@ public class AnimalSelector : MonoBehaviour
 
     private void Update()
     {
-        if (myTurn && useTimer)
+        if (myTurn && useTimer && !gameEnded)
         {
             timer -= Time.deltaTime;
+            int minutes = Mathf.FloorToInt(timer / 60f);
+            int seconds = Mathf.FloorToInt(timer % 60f);
+            timerText.text = $"{minutes:00}:{seconds:00}";
+
             if (timer <= 0)
             {
                 OnLose();
@@ -99,6 +115,7 @@ public class AnimalSelector : MonoBehaviour
     {
         if (currentCardID < animalsCards.Length)
             animalsCards[currentCardID].Deselect();
+
         currentCardID++;
 
         if (currentCardID > animalsCards.Length)
@@ -106,6 +123,13 @@ public class AnimalSelector : MonoBehaviour
 
         if (currentCardID != animalsCards.Length)
             animalsCards[currentCardID].Select();
+
+        if (currentCardID == animalsCards.Length)
+        {
+            nextButton.SetBool("isSelected", true);
+        }
+        else
+            nextButton.SetBool("isSelected", false);
     }
 
     private void ToggleCard()
@@ -114,10 +138,11 @@ public class AnimalSelector : MonoBehaviour
         {
             animalsCards[currentCardID].ToggleDiscart();
         }
-        
+
         if (currentCardID == animalsCards.Length)
         {
             EndTurn();
+            nextButton.SetBool("isSelected", false);
         }
     }
 

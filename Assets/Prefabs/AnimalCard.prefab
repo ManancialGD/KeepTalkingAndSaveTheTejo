@@ -535,6 +535,7 @@ MonoBehaviour:
   animalImage: {fileID: 753606729843622141}
   symbolsParent: {fileID: 2519284141044727808}
   symbolPrefab: {fileID: 1492810255872562443, guid: 0ab4edd7232cb2b4c8188e84d2901666, type: 3}
+  hasSymbols: 0
 --- !u!95 &448837979518670734
 Animator:
   serializedVersion: 7
