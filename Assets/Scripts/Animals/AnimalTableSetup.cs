@@ -41,6 +41,7 @@ public class AnimalTable : MonoBehaviour
             for (int i = 0; i < animalCount; i++)
             {
                 cards[i].Animal = randomAnimals[i];
+                cards[i].UpdateSymbols();
             }
         }
 
