@@ -1,0 +1,310 @@
+{
+  "questions": [
+    {
+      "question": "Está coberto de espinhos?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "É carnívoro?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Come insetos" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "É herbívoro?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Parcialmente" },
+        { "animal": "Lebre", "answer": "Sim" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "É omnívoro?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Pode comer frutas" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "É insetívoro?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "A cor dele é castanho?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "A cor dele é laranja?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "A cor dele é cinzento?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Sim" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "Ele tem pintas pelo corpo?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "Tem visão reduzida?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "Vive na floresta?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "Vive na montanha?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "Vive no rio?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "Vive na cidade?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "Tem orelhas grandes?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Não" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Sim" },
+        { "animal": "Lontra", "answer": "Não" },
+        { "animal": "Morcego Anão", "answer": "Não" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Não" },
+        { "animal": "Toupeira", "answer": "Não" }
+      ]
+    },
+    {
+      "question": "Tem orelhas pequenas?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Não" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Não" },
+        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
+        { "animal": "Raposa", "answer": "Não" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "Tem dentes afiados?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Sim" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Não" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    },
+    {
+      "question": "Tem garras afiadas?",
+      "answers": [
+        { "animal": "Gato Bravo", "answer": "Sim" },
+        { "animal": "Gineta", "answer": "Sim" },
+        { "animal": "Javali", "answer": "Não" },
+        { "animal": "Lebre", "answer": "Não" },
+        { "animal": "Lontra", "answer": "Sim" },
+        { "animal": "Morcego Anão", "answer": "Sim" },
+        { "animal": "Morcego Orelhudo", "answer": "Sim" },
+        { "animal": "Ouriço Cacheiro", "answer": "Não" },
+        { "animal": "Raposa", "answer": "Sim" },
+        { "animal": "Rato Cego", "answer": "Sim" },
+        { "animal": "Toirão", "answer": "Sim" },
+        { "animal": "Toupeira", "answer": "Sim" }
+      ]
+    }
+  ]
+}
