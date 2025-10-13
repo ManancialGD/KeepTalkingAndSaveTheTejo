@@ -33,7 +33,7 @@ public class MyAnimalCardDisplay : MonoBehaviour, ISerializationCallbackReceiver
         {
             if (nameText != null)
             {
-                nameText.text = animal.Name ?? "";
+                nameText.text = $"O teu Animal é {animal.name}" ;
             }
             if (animalImage != null)
             {

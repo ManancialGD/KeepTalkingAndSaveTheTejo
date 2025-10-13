@@ -25,13 +25,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589225154596262957}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1777479630116871660}
-  m_Father: {fileID: 8376475302201801509}
+  m_Father: {fileID: 2584623344941952739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 489163652460868511, guid: 86a13002061094844ad7150e2601385d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86a13002061094844ad7150e2601385d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -256,6 +256,7 @@ RectTransform:
   m_Children:
   - {fileID: 3925589369630335354}
   - {fileID: 7048708411258128450}
+  - {fileID: 2418159017336251021}
   - {fileID: 1579693615623514320}
   m_Father: {fileID: 8376475302201801509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -509,7 +510,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2584623344941952739}
-  - {fileID: 2418159017336251021}
   - {fileID: 2519284141044727808}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -716,8 +716,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gato Bravo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
