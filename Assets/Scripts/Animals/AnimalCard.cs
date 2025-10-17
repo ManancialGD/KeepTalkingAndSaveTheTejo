@@ -6,12 +6,7 @@ using UnityEngine.UI;
 public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 {
     [SerializeField] private Animal animal;
-    [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image animalImage;
-    [SerializeField] private Transform symbolsParent;
-    [SerializeField] private Image symbolPrefab;
-    [SerializeField] private bool hasSymbols;
-
     private bool isActive = true;
     public bool IsActive { get { return isActive; } }
 
@@ -31,50 +26,15 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
     {
         OnValidate();
         OnBeforeSerialize();
-
-        UpdateSymbols();
     }
 
     public void OnBeforeSerialize()
     {
         if (animal != null)
         {
-            if (nameText != null)
-            {
-                nameText.text = animal.Name ?? "";
-            }
             if (animalImage != null)
             {
                 animalImage.sprite = animal.Image != null ? animal.Image : null;
-            }
-#if !UNITY_EDITOR
-            UpdateSymbols();
-#endif
-        }
-    }
-
-    public void UpdateSymbols()
-    {
-        if (animal == null)
-            return;
-
-        if (symbolsParent != null && symbolPrefab != null)
-        {
-            var children = symbolsParent.GetComponentsInChildren<Image>().ToList();
-            foreach (var child in children)
-            {
-                Destroy(child.gameObject);
-            }
-            if (hasSymbols)
-            {
-                if (animal.Symbols != null && animal.Symbols.Length > 0)
-                {
-                    foreach (var symbol in animal.Symbols)
-                    {
-                        Image symbolImage = Instantiate(symbolPrefab, symbolsParent);
-                        symbolImage.sprite = symbol.Image;
-                    }
-                }
             }
         }
     }
@@ -83,14 +43,6 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 
     private void OnValidate()
     {
-        if (nameText == null)
-        {
-            nameText = GetComponentInChildren<TextMeshProUGUI>();
-            if (nameText == null)
-            {
-                Debug.LogError("TextMeshProUGUI component not found on the AnimalCard GameObject.");
-            }
-        }
         if (animalImage == null)
         {
             Image[] childImages = GetComponentsInChildren<Image>();

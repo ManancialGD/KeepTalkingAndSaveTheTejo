@@ -20,11 +20,6 @@ public class AnimalSelector : MonoBehaviour
     [SerializeField] private InputActionReference secondaryActionReference;
     [SerializeField] private WinLoseUI winLoseUI;
     private bool gameEnded;
-
-    [SerializeField] private bool useTimer;
-    [SerializeField] private float timer;
-    [SerializeField] private TextMeshProUGUI timerText;
-
     [SerializeField] private Animator nextButton;
 
     [SerializeField] private Animator QuestionCardPanel;
@@ -47,14 +42,6 @@ public class AnimalSelector : MonoBehaviour
         currentCardID = 0;
 
         gameEnded = false;
-
-        if (useTimer && timerText != null)
-        {
-            int minutes = Mathf.FloorToInt(timer / 60f);
-            int seconds = Mathf.FloorToInt(timer % 60f);
-            timerText.text = $"{minutes:00}:{seconds:00}";
-            timerText.fontSize = 100;
-        }
 
         string path = System.IO.Path.Combine(Application.streamingAssetsPath, "questions.json");
         if (System.IO.File.Exists(path))
@@ -103,22 +90,6 @@ public class AnimalSelector : MonoBehaviour
                 card.SetBool("isSelected", false);
             }
             questionCards[0].SetBool("isSelected", true);
-        }
-    }
-
-    private void Update()
-    {
-        if (useTimer && !gameEnded)
-        {
-            timer -= Time.deltaTime;
-            int minutes = Mathf.FloorToInt(timer / 60f);
-            int seconds = Mathf.FloorToInt(timer % 60f);
-            timerText.text = $"{minutes:00}:{seconds:00}";
-
-            if (timer <= 0)
-            {
-                OnLose();
-            }
         }
     }
 

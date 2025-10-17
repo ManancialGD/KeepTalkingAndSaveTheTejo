@@ -10,7 +10,6 @@ public class MyAnimalCardDisplay : MonoBehaviour, ISerializationCallbackReceiver
 
     [SerializeField] private Image animalImage;
     [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI constraintsText;
 
     public Animal Animal
     {
@@ -39,22 +38,6 @@ public class MyAnimalCardDisplay : MonoBehaviour, ISerializationCallbackReceiver
             {
                 animalImage.sprite = animal.Image != null ? animal.Image : null;
             }
-            if (constraintsText != null)
-            {
-                SetupConstrants();
-            }
-        }
-    }
-
-    private void SetupConstrants()
-    {
-        if (animal.Constraints != null && animal.Constraints.Length > 0)
-        {
-            constraintsText.text = string.Join("\n", animal.Constraints);
-        }
-        else
-        {
-            constraintsText.text = "Nenhum";
         }
     }
 

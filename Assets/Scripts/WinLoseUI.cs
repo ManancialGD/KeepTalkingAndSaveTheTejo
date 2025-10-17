@@ -22,13 +22,11 @@ public class WinLoseUI : MonoBehaviour
     {
         winLoseText.text = winText;
         animalCard.Animal = oponentAnimal;
-        animalCard.UpdateSymbols();
     }
 
     public void ShowLose(Animal oponentAnimal)
     {
         winLoseText.text = loseText;
         animalCard.Animal = oponentAnimal;
-        animalCard.UpdateSymbols();
     }
 }
