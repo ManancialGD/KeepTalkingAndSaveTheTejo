@@ -48,7 +48,6 @@ public class AnimalTable : MonoBehaviour
         {
             Animal randomAnimal = randomAnimals[Random.Range(0, randomAnimals.Count)];
             table.ThisAnimal = randomAnimal;
-            table.myAnimalDisplay.Animal = randomAnimal;
         }
 
     }

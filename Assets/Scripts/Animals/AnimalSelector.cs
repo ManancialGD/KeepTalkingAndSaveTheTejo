@@ -13,7 +13,6 @@ public class AnimalSelector : MonoBehaviour
     [SerializeField] private AnimalCard[] animalsCards;
     [SerializeField] private uint currentCardID;
     public Animal ThisAnimal { get; set; }
-    public MyAnimalCardDisplay myAnimalDisplay;
 
     [SerializeField] private InputActionReference primaryActionReference;
     [SerializeField] private InputActionReference secondaryActionReference;
