@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.Multiplayer.Center.Common;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -32,6 +31,7 @@ public class AnimalSelector : MonoBehaviour
     private Dictionary<string, Dictionary<string, string>> questionsData;
 
     [SerializeField] private TextMeshProUGUI previusText;
+    [SerializeField] private bool autoDiscardCards;
 
     private IEnumerator Start()
     {
@@ -84,7 +84,7 @@ public class AnimalSelector : MonoBehaviour
                     questionTexts[i].text = "";
             }
             questionCardSelectedID = 0;
-            
+
             foreach (var card in questionCards)
             {
                 card.SetBool("isSelected", false);
@@ -164,7 +164,20 @@ public class AnimalSelector : MonoBehaviour
                     string[] questions = questionsData.Keys.Where(q => !cardTexts.Contains(q)).ToArray();
                     questionText.text = questions[Random.Range(0, questions.Length)];
                     previusText.text = $"{question}       {answer}";
-                    Debug.Log(answer);
+
+                    if (autoDiscardCards)
+                    {
+                        foreach (AnimalCard animalCard in animalsCards)
+                        {
+                            if (animalNames.TryGetValue(animalCard.Animal.Name, out var answer2))
+                            {
+                                if (answer2.ToLower() == "não")
+                                {
+                                    animalCard.SetDiscart();
+                                }
+                            }
+                        }
+                    }
                 }
                 else
                 {

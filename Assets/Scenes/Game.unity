@@ -2256,6 +2256,7 @@ MonoBehaviour:
   nextButton: {fileID: 1658160876}
   QuestionCardPanel: {fileID: 1047721253}
   previusText: {fileID: 740033574}
+  autoDiscardCards: 1
 --- !u!1001 &138270544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3317,50 +3318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9720450772aed4241a2ed40fa05b25f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &551934381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 551934383}
-  - component: {fileID: 551934382}
-  m_Layer: 0
-  m_Name: StartUpManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &551934382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551934381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9427af43a965c940bd3dd27c96e2d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &551934383
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551934381}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645606873
 GameObject:
   m_ObjectHideFlags: 0
@@ -5111,37 +5068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c68b951bf4b414b8b8dc94fdce30cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1043597135
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1043597136}
-  m_Layer: 0
-  m_Name: AnswearGiver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1043597136
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043597135}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 471.1511, y: 246.11064, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047721250
 GameObject:
   m_ObjectHideFlags: 0
@@ -7051,5 +6977,3 @@ SceneRoots:
   - {fileID: 1230165372}
   - {fileID: 110800386}
   - {fileID: 261526651}
-  - {fileID: 551934383}
-  - {fileID: 1043597136}

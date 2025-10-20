@@ -80,4 +80,13 @@ public class AnimalCard : MonoBehaviour, ISerializationCallbackReceiver
 
         isActive = !isActive;
     }
+
+    public void SetDiscart()
+    {
+        if (isActive)
+        {
+            isActive = false;
+            anim.SetTrigger("Discart");
+        }
+    }
 }
