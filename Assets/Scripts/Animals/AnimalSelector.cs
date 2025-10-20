@@ -30,7 +30,8 @@ public class AnimalSelector : MonoBehaviour
     private Dictionary<string, Dictionary<string, string>> questionsData;
 
     [SerializeField] private TextMeshProUGUI previusText;
-    [SerializeField] private bool autoDiscardCards;
+
+    private int questionCount = 0;
 
     private IEnumerator Start()
     {
@@ -164,19 +165,19 @@ public class AnimalSelector : MonoBehaviour
                     questionText.text = questions[Random.Range(0, questions.Length)];
                     previusText.text = $"{question}       {answer}";
 
-                    if (autoDiscardCards)
+                    questionCount++;
+
+                    foreach (AnimalCard animalCard in animalsCards)
                     {
-                        foreach (AnimalCard animalCard in animalsCards)
+                        if (animalNames.TryGetValue(animalCard.Animal.Name, out var answer2))
                         {
-                            if (animalNames.TryGetValue(animalCard.Animal.Name, out var answer2))
+                            if (answer != answer2)
                             {
-                                if (answer2.ToLower() == "não")
-                                {
-                                    animalCard.SetDiscart();
-                                }
+                                animalCard.SetDiscart();
                             }
                         }
                     }
+                    CheckWinConditions();
                 }
                 else
                 {
@@ -265,15 +266,9 @@ public class AnimalSelector : MonoBehaviour
     private void OnWin()
     {
         winLoseUI.gameObject.SetActive(true);
+        winLoseUI.UpdateText(questionCount);
         gameEnded = true;
     }
-
-    private void OnLose()
-    {
-        winLoseUI.gameObject.SetActive(true);
-        gameEnded = true;
-    }
-
     private void OnValidate()
     {
         if (animalsCards == null || animalsCards.Length == 0)

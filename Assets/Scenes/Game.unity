@@ -2261,9 +2261,8 @@ MonoBehaviour:
   secondaryActionReference: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 441897379}
   nextButton: {fileID: 1658160876}
-  QuestionCardPanel: {fileID: 0}
-  previusText: {fileID: 0}
-  autoDiscardCards: 0
+  QuestionCardPanel: {fileID: 1047721253}
+  previusText: {fileID: 740033574}
 --- !u!1001 &138270544
 PrefabInstance:
   m_ObjectHideFlags: 0
