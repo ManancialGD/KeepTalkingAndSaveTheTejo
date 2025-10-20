@@ -54,7 +54,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963676035783850801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -122,8 +122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -24}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 41}
+  m_SizeDelta: {x: 432.018, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73131698655361561
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_CellSize: {x: 200, y: 290}
   m_Spacing: {x: 88.1, y: 0}
   m_Constraint: 1
-  m_ConstraintCount: 4
+  m_ConstraintCount: 6
 --- !u!1 &5371353051200680530
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +202,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -223,6 +225,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -270,7 +273,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3fabeedf3ed433341833d7a5d45b4670, type: 3}
+      objectReference: {fileID: 3227353087003273584, guid: 3fabeedf3ed433341833d7a5d45b4670, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (1)
@@ -398,7 +401,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}
+      objectReference: {fileID: -2982804128991818330, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (6)
@@ -526,7 +529,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3acb2b4767fe6bc4fbd387c07cfd986b, type: 3}
+      objectReference: {fileID: -6786809498980168163, guid: 3acb2b4767fe6bc4fbd387c07cfd986b, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (10)
@@ -654,7 +657,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 972cb2c3753e1b4408a68866b9f238cb, type: 3}
+      objectReference: {fileID: 843682544548994864, guid: 972cb2c3753e1b4408a68866b9f238cb, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (8)
@@ -782,7 +785,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 27c1e17a82e02ea44b54a40cf95c808e, type: 3}
+      objectReference: {fileID: -7566974407344350029, guid: 27c1e17a82e02ea44b54a40cf95c808e, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (4)
@@ -910,7 +913,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e423573f776557b489ae87268f44e99b, type: 3}
+      objectReference: {fileID: 957639037215967948, guid: e423573f776557b489ae87268f44e99b, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (11)
@@ -1038,7 +1041,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7f50baa8520cac349ac918c936d4e20f, type: 3}
+      objectReference: {fileID: 823810634000593550, guid: 7f50baa8520cac349ac918c936d4e20f, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (5)
@@ -1166,7 +1169,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7693ca7829228c448af88a8d87bb2fbc, type: 3}
+      objectReference: {fileID: -3576080766865839879, guid: 7693ca7829228c448af88a8d87bb2fbc, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (7)
@@ -1294,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 59aa518c709cce5429422770eb911725, type: 3}
+      objectReference: {fileID: 2636574714206409755, guid: 59aa518c709cce5429422770eb911725, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (9)
@@ -1422,7 +1425,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d6366fc05f83dc2439f721553fadf191, type: 3}
+      objectReference: {fileID: -858247938156327692, guid: d6366fc05f83dc2439f721553fadf191, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (2)
@@ -1550,7 +1553,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}
+      objectReference: {fileID: -2234529429097226953, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard (3)
@@ -1678,7 +1681,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b41d2332f58a5424695fe6443f24ef9e, type: 3}
+      objectReference: {fileID: -798094169069244970, guid: b41d2332f58a5424695fe6443f24ef9e, type: 3}
     - target: {fileID: 4897488506337806979, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Name
       value: AnimalCard
