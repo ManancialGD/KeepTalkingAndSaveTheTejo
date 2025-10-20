@@ -209,7 +209,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}
+      objectReference: {fileID: -2234529429097226953, guid: 0cafa2c67be7cb644b0db4769f6ec575, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -526,7 +526,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3fabeedf3ed433341833d7a5d45b4670, type: 3}
+      objectReference: {fileID: 3227353087003273584, guid: 3fabeedf3ed433341833d7a5d45b4670, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1162,6 +1162,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2301308838495108368, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2324004479536600566, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2365034392861398809, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
@@ -2253,7 +2257,6 @@ MonoBehaviour:
   - {fileID: 179384396}
   - {fileID: 907566763}
   currentCardID: 0
-  myAnimalDisplay: {fileID: 0}
   primaryActionReference: {fileID: -7509495631122938441, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryActionReference: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 441897379}
@@ -2272,7 +2275,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}
+      objectReference: {fileID: -2982804128991818330, guid: dd2e69f10ea48a14f91d7b018d638b5d, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -2560,7 +2563,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3acb2b4767fe6bc4fbd387c07cfd986b, type: 3}
+      objectReference: {fileID: -6786809498980168163, guid: 3acb2b4767fe6bc4fbd387c07cfd986b, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -2749,7 +2752,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7693ca7829228c448af88a8d87bb2fbc, type: 3}
+      objectReference: {fileID: -3576080766865839879, guid: 7693ca7829228c448af88a8d87bb2fbc, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -3144,7 +3147,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 59aa518c709cce5429422770eb911725, type: 3}
+      objectReference: {fileID: 2636574714206409755, guid: 59aa518c709cce5429422770eb911725, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -3480,8 +3483,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3616,8 +3619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "A cor dele \xE9 castanho?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4025,7 +4028,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7f50baa8520cac349ac918c936d4e20f, type: 3}
+      objectReference: {fileID: 823810634000593550, guid: 7f50baa8520cac349ac918c936d4e20f, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -4762,8 +4765,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Est\xE1 coberto de espinhos?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4898,8 +4901,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "A cor dele \xE9 laranja?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5273,7 +5276,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 27c1e17a82e02ea44b54a40cf95c808e, type: 3}
+      objectReference: {fileID: -7566974407344350029, guid: 27c1e17a82e02ea44b54a40cf95c808e, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -5542,8 +5545,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Ouri\xE7o Cacheiro"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
-  m_sharedMaterial: {fileID: 5723178190674709004, guid: 9c4f189ccf364c04393721700e08d431, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5925,7 +5928,7 @@ PrefabInstance:
     - target: {fileID: 753606729843622141, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 972cb2c3753e1b4408a68866b9f238cb, type: 3}
+      objectReference: {fileID: 843682544548994864, guid: 972cb2c3753e1b4408a68866b9f238cb, type: 3}
     - target: {fileID: 1579693615623514320, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
