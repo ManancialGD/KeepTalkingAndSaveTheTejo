@@ -2172,9 +2172,6 @@ PrefabInstance:
     - {fileID: 2379476086022636972, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
     - {fileID: 5371353051200680530, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1055551545690648085, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1658160875}
     - targetCorrespondingSourceObject: {fileID: 741718169677078179, guid: e87b2b9d284b1b54f8faa39cfecdb76f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2062662692}
@@ -2260,7 +2257,7 @@ MonoBehaviour:
   primaryActionReference: {fileID: -7509495631122938441, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryActionReference: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 441897379}
-  nextButton: {fileID: 1658160876}
+  nextButton: {fileID: 0}
   QuestionCardPanel: {fileID: 1047721253}
   previusText: {fileID: 740033574}
 --- !u!1001 &138270544
@@ -4976,104 +4973,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653252476}
-  m_CullTransparentMesh: 1
---- !u!1 &1658160874
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658160875}
-  - component: {fileID: 1658160878}
-  - component: {fileID: 1658160877}
-  - component: {fileID: 1658160876}
-  m_Layer: 0
-  m_Name: PassTurn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1658160875
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658160874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 130646722}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 729, y: -302}
-  m_SizeDelta: {x: 228.756, y: 228.756}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1658160876
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658160874}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: adad1d3e240515a40aef823d4aea528d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1658160877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658160874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 6562221280921156952, guid: 455067f9d085b274db351393372ba40d, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1658160878
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658160874}
   m_CullTransparentMesh: 1
 --- !u!1001 &1684702651
 PrefabInstance:
