@@ -13,8 +13,4 @@ MonoBehaviour:
   m_Name: Gato Bravo
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Gato Bravo
-  <Image>k__BackingField: {fileID: 21300000, guid: b41d2332f58a5424695fe6443f24ef9e, type: 3}
-  constraints: []
-  symbols:
-  - {fileID: 11400000, guid: ee253355c2786ba48be91b8550a0728a, type: 2}
-  - {fileID: 11400000, guid: 922a5f38fa77cd64a8591af352752b1c, type: 2}
+  <Image>k__BackingField: {fileID: -798094169069244970, guid: b41d2332f58a5424695fe6443f24ef9e, type: 3}
