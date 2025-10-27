@@ -256,23 +256,6 @@
       ]
     },
     {
-      "question": "Tem orelhas pequenas?",
-      "answers": [
-        { "animal": "Gato Bravo", "answer": "Sim" },
-        { "animal": "Gineta", "answer": "Não" },
-        { "animal": "Javali", "answer": "Não" },
-        { "animal": "Lebre", "answer": "Não" },
-        { "animal": "Lontra", "answer": "Sim" },
-        { "animal": "Morcego Anão", "answer": "Sim" },
-        { "animal": "Morcego Orelhudo", "answer": "Não" },
-        { "animal": "Ouriço Cacheiro", "answer": "Sim" },
-        { "animal": "Raposa", "answer": "Não" },
-        { "animal": "Rato Cego", "answer": "Sim" },
-        { "animal": "Toirão", "answer": "Sim" },
-        { "animal": "Toupeira", "answer": "Sim" }
-      ]
-    },
-    {
       "question": "Tem dentes afiados?",
       "answers": [
         { "animal": "Gato Bravo", "answer": "Sim" },

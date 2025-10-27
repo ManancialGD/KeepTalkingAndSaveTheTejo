@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f840c8a818a75d4192291d7ce7ef21a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalsCards:
+  animalCards:
   - {fileID: 2062662694}
   - {fileID: 46827229}
   - {fileID: 1684702653}
@@ -2253,11 +2253,22 @@ MonoBehaviour:
   - {fileID: 444948573}
   - {fileID: 179384396}
   - {fileID: 907566763}
-  currentCardID: 0
+  allAnimals:
+  - {fileID: 11400000, guid: c442c8cb0e5cacf41bb1d4ccebf1cb69, type: 2}
+  - {fileID: 11400000, guid: 300c743b87c20c7459ce4825a03f7499, type: 2}
+  - {fileID: 11400000, guid: c07749896ff63d143a3e252e569b378a, type: 2}
+  - {fileID: 11400000, guid: 6aa6bf4f27e6c2a4389d0804a2cbe972, type: 2}
+  - {fileID: 11400000, guid: dc14e3b12b2651645a66e4aa019c38d7, type: 2}
+  - {fileID: 11400000, guid: cbb489bfe5d511245b5c3479bb13cc1e, type: 2}
+  - {fileID: 11400000, guid: 22437058105f14f4baacef1faf309a68, type: 2}
+  - {fileID: 11400000, guid: bcf7fee825ac8714eb6ac127abf8ac37, type: 2}
+  - {fileID: 11400000, guid: 137f543afb83b8245bfbb6ce54b65bd2, type: 2}
+  - {fileID: 11400000, guid: bbab63f9375c06942a6caecc5569cd3f, type: 2}
+  - {fileID: 11400000, guid: 14ff1c01d57fe8043b5a2f69438309d6, type: 2}
+  - {fileID: 11400000, guid: 41c454f072faa0a42bd05a9a9f26e8c4, type: 2}
   primaryActionReference: {fileID: -7509495631122938441, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryActionReference: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   winLoseUI: {fileID: 441897379}
-  nextButton: {fileID: 0}
   QuestionCardPanel: {fileID: 1047721253}
   previusText: {fileID: 740033574}
 --- !u!1001 &138270544
@@ -2926,55 +2937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9720450772aed4241a2ed40fa05b25f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &261526649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 261526651}
-  - component: {fileID: 261526650}
-  m_Layer: 0
-  m_Name: TableSetup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &261526650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261526649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608bb25df03e2c3409949ba5a53e08bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tables:
-  - {fileID: 130646736}
-  cardPrefab: {fileID: 5828397175939661332, guid: 912c9754e8775344090b00a40e9625ce, type: 3}
-  allAnimals: []
-  animalCount: 12
---- !u!4 &261526651
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261526649}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &441897377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3640,8 +3602,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.4
-  m_fontSizeBase: 33.4
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4786,8 +4748,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.4
-  m_fontSizeBase: 33.4
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4922,8 +4884,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.4
-  m_fontSizeBase: 33.4
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5468,8 +5430,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6011,4 +5973,3 @@ SceneRoots:
   - {fileID: 915359013}
   - {fileID: 1230165372}
   - {fileID: 110800386}
-  - {fileID: 261526651}
