@@ -10,6 +10,8 @@ using Random = UnityEngine.Random;
 
 public class CardSelector : MonoBehaviour
 {
+    [SerializeField]
+    private ArduinoInput arduinoInput;
     [SerializeField] private AnimalCard[] animalCards;
     [SerializeField] private Animal[] allAnimals;
     public Animal ThisAnimal { get; private set; }
@@ -67,6 +69,9 @@ public class CardSelector : MonoBehaviour
             QuestionCardPanel.SetTrigger("Show");
 
         ValidateQuestionData(questionsData);
+
+        arduinoInput.Button1Down += DoPrimaryAction;
+        arduinoInput.Button2Down += DoSecondaryAction;
     }
 
     private void UpdateQuestions()
@@ -136,6 +141,11 @@ public class CardSelector : MonoBehaviour
 
     private void OnPrimaryAction(InputAction.CallbackContext context)
     {
+        DoPrimaryAction();
+    }
+
+    private void DoPrimaryAction()
+    {
         if (gameEnded)
         {
             SceneTools.GoToMainMenu();
@@ -145,6 +155,11 @@ public class CardSelector : MonoBehaviour
     }
 
     private void OnSecondaryAction(InputAction.CallbackContext context)
+    {
+        DoSecondaryAction();
+    }
+
+    private void DoSecondaryAction()
     {
         if (gameEnded)
         {

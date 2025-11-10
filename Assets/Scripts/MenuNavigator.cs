@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class MenuNavigator : MonoBehaviour
 {
+    [SerializeField]
+    private ArduinoInput arduinoInput;
     [SerializeField] private InputActionReference moveAction;
     [SerializeField] private InputActionReference selectAction;
 
@@ -26,6 +28,9 @@ public class MenuNavigator : MonoBehaviour
             Array.ForEach(activeMenu.Buttons, button => button.SetSelection(false));
             activeMenu.Buttons[0].SetSelection(true);
         }
+
+        arduinoInput.Button1Down += DoMove;
+        arduinoInput.Button2Down += DoSelect;
     }
 
     public void SetActiveMenu(Menu menu)
@@ -53,6 +58,11 @@ public class MenuNavigator : MonoBehaviour
 
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
+        DoMove();
+    }
+
+    private void DoMove()
+    {
         selectedButtonIndex = (selectedButtonIndex + 1) % activeMenu.Buttons.Length;
         if (activeMenu.Buttons != null && activeMenu.Buttons.Length > 0)
         {
@@ -63,10 +73,12 @@ public class MenuNavigator : MonoBehaviour
 
     private void OnSelectPerformed(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            activeMenu.Buttons[selectedButtonIndex].OnClick();
-        }
+        DoSelect();
+    }
+
+    private void DoSelect()
+    {
+        activeMenu.Buttons[selectedButtonIndex].OnClick();
     }
 
 }

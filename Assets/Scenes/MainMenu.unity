@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed707ef90d9252438f341b64d6c3f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arduinoInput: {fileID: 1723978597}
   moveAction: {fileID: -7509495631122938441, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   selectAction: {fileID: -8954277250123818662, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   activeMenu: {fileID: 958870993}
@@ -989,6 +990,69 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1723978595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723978598}
+  - component: {fileID: 1723978597}
+  - component: {fileID: 1723978596}
+  m_Layer: 0
+  m_Name: Arduino
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1723978596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723978595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc5f48af2cffd747a079fe8c632e2c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SerialController
+  portName: COM3
+  baudRate: 9600
+  messageListener: {fileID: 1723978595}
+  reconnectionDelay: 1000
+  maxUnreadMessages: 1
+--- !u!114 &1723978597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723978595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a8e3fe1dff89f4ab3aedad72f0f050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArduinoInput
+  serialController: {fileID: 1723978596}
+--- !u!4 &1723978598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723978595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 407.2272, y: 140.45862, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873685150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,3 +1105,4 @@ SceneRoots:
   - {fileID: 550706670}
   - {fileID: 1873685152}
   - {fileID: 574259341}
+  - {fileID: 1723978598}
