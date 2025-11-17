@@ -18,7 +18,7 @@
       ]
     },
     {
-      "question": "É carnívoro?",
+      "question": "Come só carne?",
       "answers": [
         { "animal": "Gato Bravo", "answer": "Sim" },
         { "animal": "Gineta", "answer": "Sim" },
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "question": "É herbívoro?",
+      "question": "Come só erva?",
       "answers": [
         { "animal": "Gato Bravo", "answer": "Não" },
         { "animal": "Gineta", "answer": "Não" },
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "question": "É omnívoro?",
+      "question": "Come carne e erva?",
       "answers": [
         { "animal": "Gato Bravo", "answer": "Não" },
         { "animal": "Gineta", "answer": "Não" },
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "question": "É insetívoro?",
+      "question": "Come insetos?",
       "answers": [
         { "animal": "Gato Bravo", "answer": "Não" },
         { "animal": "Gineta", "answer": "Não" },

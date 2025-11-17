@@ -10,8 +10,6 @@ using Random = UnityEngine.Random;
 
 public class CardSelector : MonoBehaviour
 {
-    [SerializeField]
-    private ArduinoInput arduinoInput;
     [SerializeField] private AnimalCard[] animalCards;
     [SerializeField] private Animal[] allAnimals;
     public Animal ThisAnimal { get; private set; }
@@ -70,8 +68,6 @@ public class CardSelector : MonoBehaviour
 
         ValidateQuestionData(questionsData);
 
-        arduinoInput.Button1Down += DoPrimaryAction;
-        arduinoInput.Button2Down += DoSecondaryAction;
     }
 
     private void UpdateQuestions()
